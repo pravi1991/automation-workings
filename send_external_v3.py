@@ -15,9 +15,7 @@ config = configparser.ConfigParser()
 config.read(setting_path)
 username = config.get('account_juno', 'username')
 password = config.get('account_juno', 'password')
-# toaddr = ["praveen.tt@junotele.com" ]
-toaddr = ["Johnbosco.Mudaliar@vodafone.com", "rohit.misra@vodafone.com", "Sachin.Mehta@vodafone.com",
-          "nillaey@junotele.com", "harish.nanjundaswamy@junotele.com", "nikhil.gupta@junotele.com"]
+toaddr = ["praveen.tt@junotele.com" ]
 Subject = 'JSReport for Dynamic YES/NO'
 Message = "Hi,\n\nPlease find the enclosed JSecure Dynamic YES/NO report. \n\n(Dynamic Yes/No Team)"  # for " + str(datetime.datetime.now().hour) + " th hour"
 filename = 'Voda_Report_' + today + '.xlsx'
